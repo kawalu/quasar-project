@@ -12,7 +12,8 @@
         <h2>HONDA</h2>
       </div>
       <div class="col-12">
-        <q-img src="src/assets/HONDA封面.jpg"></q-img>
+        <!-- HONDA封面 -->
+        <q-img :src="HONDA"></q-img>
       </div>
       <template v-for="bike in bikes" :key="bike._id">
         <div class="col-12 col-md-6 col-lg-3" v-if="bike.category === 'HONDA'">
@@ -23,7 +24,8 @@
         <h2>YAMAHA</h2>
       </div>
       <div class="col-12">
-        <q-img src="src/assets/YAMAHA封面.jpg"></q-img>
+        <!-- YAMAHA封面 -->
+        <q-img :src="YAMAHA"></q-img>
       </div>
       <template v-for="bike in bikes" :key="bike._id">
         <div class="col-12 col-md-6 col-lg-3" v-if="bike.category === 'YAMAHA'">
@@ -34,7 +36,7 @@
         <h2>KAWASAKI</h2>
       </div>
       <div class="col-12">
-        <q-img src="src/assets/kawasaki封面.jpg"></q-img>
+        <q-img :src="KAWASAKI"></q-img>
       </div>
       <template v-for="bike in bikes" :key="bike._id">
         <div class="col-12 col-md-6 col-lg-3" v-if="bike.category === 'KAWASAKI'">
@@ -47,11 +49,22 @@
 
 <script setup>
 import { api } from 'boot/axios'
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 import { useQuasar } from 'quasar'
 import BikeCard from 'src/components/BikeCard.vue'
 
 const $q = useQuasar()
+
+const HONDA = reactive(
+  new URL('../../assets/HONDA封面.jpg', import.meta.url).href
+)
+const YAMAHA = reactive(
+  new URL('../../assets/YAMAHA封面.jpg', import.meta.url).href
+)
+
+const KAWASAKI = reactive(
+  new URL('../../assets/kawasaki封面.jpg', import.meta.url).href
+)
 
 const bikes = ref([]);
 

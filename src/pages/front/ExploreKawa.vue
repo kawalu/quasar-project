@@ -2,7 +2,7 @@
   <div class="q-pa-none example-column-horizontal-alignment">
     <div class="row">
       <div class="col-12">
-        <q-img src="src/assets/YAMAHA封面2.jpg"></q-img>
+        <q-img :src="YAMAHA2"></q-img>
       </div>
       <q-breadcrumbs class="text-h6" style="padding-left: 15%;">
         <q-breadcrumbs-el label="回首頁" icon="home" to="/" />
@@ -82,3 +82,10 @@
   transform: translateY(-50%);
 }
 </style>
+
+<script setup>
+import { reactive } from 'vue'
+const YAMAHA2 = reactive(
+  new URL('../../assets/YAMAHA封面2.jpg', import.meta.url).href
+)
+</script>

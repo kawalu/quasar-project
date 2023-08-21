@@ -96,8 +96,7 @@
           </div>
           <div class="col-4">
             <q-card class="my-card q-my-xl">
-              <q-img src="src/assets/honda.jpg">
-              </q-img>
+              <q-img :src="hondaPeople"></q-img>
             </q-card>
           </div>
         </div>
@@ -112,8 +111,7 @@
             </p>
           </div>
           <div class="col-4">
-            <q-img src="src/assets/hondaskilltree-2.jpg" style="height: 100%; width: 100%;">
-            </q-img>
+            <q-img :src="hondaskilltree" style="height: 100%; width: 100%;"></q-img>
           </div>
         </div>
       </swiper-slide>
@@ -131,7 +129,7 @@
             </p>
           </div>
           <div class="col-4">
-            <q-img src="src/assets/rc213v.jpg" style="height: 100%; width: 100%;">
+            <q-img :src="rc213v" style="height: 100%; width: 100%;">
             </q-img>
           </div>
         </div>
@@ -148,7 +146,7 @@
             </p>
           </div>
           <div class="col-4">
-            <q-img src="src/assets/cbr1000rrr.jpg" style="height: 100%; width: 100%;">
+            <q-img :src="cbr1000rrr" style="height: 100%; width: 100%;">
             </q-img>
           </div>
         </div>
@@ -196,7 +194,7 @@
 
 <script setup>
 
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination, Navigation } from 'swiper/modules'
@@ -234,4 +232,16 @@ const bikes = ref([]);
   }
 })()
 
+const hondaPeople = reactive(
+  new URL('../../assets/honda.jpg', import.meta.url).href
+)
+const hondaskilltree = reactive(
+  new URL('../../assets/hondaskilltree-2.jpg', import.meta.url).href
+)
+const rc213v = reactive(
+  new URL('../../assets/rc213v.jpg', import.meta.url).href
+)
+const cbr1000rrr = reactive(
+  new URL('../../assets/cbr1000rrr.jpg', import.meta.url).href
+)
 </script>
