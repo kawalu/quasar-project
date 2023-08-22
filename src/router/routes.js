@@ -101,15 +101,6 @@ const routes = [
         }
       },
       {
-        path: 'bikeview',
-        component: () => import('pages/admin/BikeView.vue'),
-        meta: {
-          title: '重機網 || 管理',
-          login: true,
-          admin: true
-        }
-      },
-      {
         path: 'bike',
         component: () => import('pages/admin/BikeManagement.vue'),
         meta: {
