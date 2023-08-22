@@ -9,7 +9,7 @@
     </q-carousel>
   </div>
 
-  <div class="q-pa-md example-row-horizontal-alignment" data-aos="fade-up">
+  <div class="q-pa-md example-row-horizontal-alignment" data-aos="fade-up" data-aos-duration="3000">
     <div class="row justify-center">
       <div class="col-4">
         <h2 style="color: brown; font-weight: bolder;">機種一覽 <span class="text">BIKE LINE UP</span></h2>
@@ -19,7 +19,7 @@
     </div>
   </div>
 
-  <div class="q-pa-xl row q-gutter-md justify-center"  style="padding: 0 15%;" data-aos="fade-up" data-aos-delay="400">
+  <div class="q-pa-xl row q-gutter-md justify-center" style="padding: 0 15%;" data-aos="fade-up" data-aos-duration="3000">
     <swiper :navigation="true" :slidesPerView="4" :spaceBetween="3" :pagination="{
       clickable: true,
     }" :modules="modules" class="mySwiper">
@@ -79,10 +79,10 @@
   </div>
 
   <div class="q-pa-md example-row-horizontal-alignment" style="background: #545353;">
-    <div class="col-12 q-px-xl" style="padding: 0 10%; margin: 0;" data-aos="fade-up" data-aos-delay="800">
+    <div class="col-12 q-px-xl" style="padding: 0 10%; margin: 0;" data-aos="fade-down" data-aos-duration="3000">
       <h2 class="title-h3">關於KAWA <span class="text">BIKE LINE UP</span></h2>
     </div>
-    <swiper :loop="true" :navigation="true" :modules="modules" class="mySwiper" data-aos="fade-up" data-aos-delay="1200">
+    <swiper :loop="true" :navigation="true" :modules="modules" class="mySwiper" data-aos="fade-down" data-aos-duration="3000">
       <swiper-slide>
         <div class="row justify-center">
           <div class="col-6 q-px-xl ">
@@ -153,12 +153,39 @@
       </swiper-slide>
     </swiper>
   </div>
+  <div class="q-pa-md example-row-horizontal-alignment" style="background: #c7dbeb;">
+    <div class="col-12 q-px-xl" style="padding: 0 10%; margin: 0;" data-aos="fade-up" data-aos-duration="3000">
+      <h2 class="title-h3">關於KAWA <span class="text">BIKE LINE UP</span></h2>
+    </div>
+    <div class="row justify-center" data-aos="fade-up" data-aos-duration="3000">
+      <div class="col-5">
+        <h3 class="title-h3">KAWA感性發言</h3>
+        <p class="title2">
+          您的支持是我們最大的動力和榮耀。每一次您選擇我們的產品，
+          就是對我們無盡的鼓舞與信任。我們不僅在追求卓越的品質和創新的設計，更在於希望為您帶來無與倫比的體驗與情感共鳴。
+          您的需求是我們努力的方向，
+          您的笑容是我們最大的收穫。無論您身處何地，請總是感受到我們對於細節的關注和對於您的真摯關心。謝謝您一直以來的支持，
+          期待與您攜手共創更多美好的時刻。
+        </p>
+      </div>
+      <div class="col-1 q-mb-xl">
+      </div>
+      <div class="col-5 q-mb-xl">
+        <q-img :src="yamahaAdv"></q-img>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .title {
   font-size: 18px;
   color: #A5A2A2;
+}
+
+.title2 {
+  font-size: 18px;
+  color: #000;
 }
 
 .title-h3 {
@@ -243,5 +270,8 @@ const rc213v = reactive(
 )
 const cbr1000rrr = reactive(
   new URL('../../assets/cbr1000rrr.jpg', import.meta.url).href
+)
+const yamahaAdv = reactive(
+  new URL('../../assets/YAMAHAADV.jpg', import.meta.url).href
 )
 </script>

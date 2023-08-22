@@ -8,6 +8,7 @@
         <a href="https://qr.opay.tw/jDwvv">  <q-img :src="Monkey"></q-img></a>
       </div>
       <div class="col-12 text-center">
+       <h6>您的一點小支持是給予KAWA最大的前進動力</h6>
       </div>
     </div>
   </div>

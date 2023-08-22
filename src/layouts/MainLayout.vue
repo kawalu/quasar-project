@@ -7,7 +7,7 @@
           <q-toolbar-title style="color: #fff; text-decoration: none;">
             <q-btn round to="/">
               <q-avatar size="xl">
-                <img src="../assets/logo.svg">
+                <img src="../assets/莫忘初衷.png">
               </q-avatar>
               kawa重機
             </q-btn>
