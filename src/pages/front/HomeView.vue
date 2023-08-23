@@ -80,9 +80,10 @@
 
   <div class="q-pa-md example-row-horizontal-alignment" style="background: #545353;">
     <div class="col-12 q-px-xl" style="padding: 0 10%; margin: 0;" data-aos="fade-down" data-aos-duration="3000">
-      <h2 class="title-h3">關於KAWA <span class="text">BIKE LINE UP</span></h2>
+      <h2 class="title-h3">關於KAWA</h2>
     </div>
-    <swiper :loop="true" :navigation="true" :modules="modules" class="mySwiper" data-aos="fade-down" data-aos-duration="3000">
+    <swiper :loop="true" :navigation="true" :modules="modules" class="mySwiper" data-aos="fade-down"
+      data-aos-duration="3000">
       <swiper-slide>
         <div class="row justify-center">
           <div class="col-6 q-px-xl ">
@@ -155,7 +156,6 @@
   </div>
   <div class="q-pa-md example-row-horizontal-alignment" style="background: #c7dbeb;">
     <div class="col-12 q-px-xl" style="padding: 0 10%; margin: 0;" data-aos="fade-up" data-aos-duration="3000">
-      <h2 class="title-h3">關於KAWA <span class="text">BIKE LINE UP</span></h2>
     </div>
     <div class="row justify-center" data-aos="fade-up" data-aos-duration="3000">
       <div class="col-5">
@@ -172,6 +172,24 @@
       </div>
       <div class="col-5 q-mb-xl">
         <q-img :src="yamahaAdv"></q-img>
+      </div>
+    </div>
+  </div>
+  <div class="q-pa-md example-row-horizontal-alignment footer">
+    <div class="row q-mt-lg justify-center" style="border-top: 1px solid #757575; border-bottom: 1px solid #757575;">
+      <div class="q-gutter-md">
+        <ul class="q-ma-xl q-gutter-md">
+          <li>為了你我的安全及響應環保愛地球，請 “喝酒不騎車、騎車不飆車”。</li>
+          <li>“勿不當改裝車輛”，以免觸犯相關之交通法規。</li>
+          <li>
+            為維護民眾居住生活品質及環境安寧，請配備有「運動/競技模式」等車輛(含跑車、大型重型機車)之車主，勿於市區及住宅區使用或行使急加速、<br>
+            拉轉速行為，而高輸出功率會製造噪音之車輛，亦請車主盡量避免於市區夜間21時至上午7時間行駛。
+          </li>
+          <li>
+            行政院環境保護署、內政部警政署及公路監理機關將針對車主擾寧之行為及製造噪音之車輛加強取締，以維護民眾生活安寧。
+          </li>
+        </ul>
+        <p class="text-center">kawa關心您</p>
       </div>
     </div>
   </div>
@@ -214,8 +232,9 @@
   background-color: rgba(0, 0, 0, .3);
 }
 
-.swiper {
-  /* position: static; */
+.footer {
+  background: #424242;
+  color: #fff;
 }
 </style>
 
