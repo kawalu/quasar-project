@@ -10,6 +10,7 @@
       <div class="col-12 text-center">
        <h6>您的一點小支持是給予KAWA最大的前進動力</h6>
       </div>
+      <a href="https://qr.opay.tw/A7CYP"><img src="https://payment.opay.tw/Upload/Broadcaster/2300513/QRcode/QRCode_D5AC3610E79AFF0628B654D9BC3F0484.png" /></a>
     </div>
   </div>
 </template>
