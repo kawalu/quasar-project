@@ -173,7 +173,8 @@ const columns = [
     required: true,
     label: '名稱',
     align: 'center',
-    field: 'name'
+    field: 'name',
+    sortable: true
   },
   { name: 'image', align: 'center', label: '圖片', field: 'image', sortable: true },
   { name: 'model', align: 'center', label: '型號', field: 'model', sortable: true },
